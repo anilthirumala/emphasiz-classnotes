@@ -9,13 +9,13 @@ namespace AbstractDemo
     class Chair:Furniture
     {
         int nooflegs;
-        internal void Accept()
+        public override void Accept()
         {
             base.Accept();
             Console.WriteLine("Enter the no of legs");
             nooflegs = Convert.ToInt32(Console.ReadLine());
         }
-        internal void Display()
+        public override void Display()
         {
             base.Display();
             Console.WriteLine(" No of legs: " + nooflegs);

@@ -11,7 +11,7 @@ namespace AbstractDemo
         string Color;
         int Width;
         int Height;
-        protected void Accept()
+        public virtual  void Accept()
         {
             Console.WriteLine("Enter the Color");
             Color = Console.ReadLine();
@@ -20,7 +20,7 @@ namespace AbstractDemo
             Console.WriteLine("Enter the Height");
             Height = Convert.ToInt32(Console.ReadLine());
         }
-        protected void Display()
+       public  virtual  void Display()
         {
             Console.Write($" Color:{Color} Width:{Width} Height{Height}");
         }
